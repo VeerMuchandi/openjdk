@@ -1,3 +1,3 @@
 #!/bin/sh
 date
-java version
+java -version
