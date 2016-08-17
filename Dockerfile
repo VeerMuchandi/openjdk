@@ -42,5 +42,7 @@ RUN set -x \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 
+USER 1001
+
 # If you're reading this and have any feedback on how this image could be
 #   improved, please open an issue or a pull request so we can discuss it!
