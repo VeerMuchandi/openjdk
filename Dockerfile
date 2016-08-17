@@ -43,7 +43,7 @@ RUN set -x \
 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 
 ADD ./init.sh ./
-
+RUN chown 1001:1001 init.sh && chmod +x init.sh
 USER 1001
 
 # If you're reading this and have any feedback on how this image could be
